@@ -72,7 +72,6 @@ p {
 }
 
 /* Links */
-
 a {
   text-decoration: none;
 }
@@ -99,7 +98,6 @@ a {
     font-size: 1.5rem;
   }
 }
-
 /* Badges */
 
 .badge {
@@ -129,13 +127,12 @@ a {
   .badge {
     font-size: 1.5rem;
   }
+
   .badge--small {
     font-size: 1.2rem;
   }
 }
-
 /* Lists */
-
 .list {
   list-style: none;
   padding-left: 0;
@@ -162,9 +159,7 @@ a {
     padding-left: 0;
   }
 }
-
 /* Icons */
-
 .icon {
   width: 40px;
   height: 40px;
@@ -198,7 +193,6 @@ a {
 }
 
 /* Buttons */
-
 .btn {
   border-radius: 40px;
   border: 0;
@@ -207,7 +201,7 @@ a {
   font-weight: 600;
   margin: 1rem 0;
   outline: 0;
-  padding: 2rem 2rem;
+  padding: 2rem 3rem;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -235,7 +229,7 @@ a {
 }
 
 .btn--secondary:hover {
-  background: #00c8eb;
+  background: #05cdf0;
 }
 
 .btn--accent {
@@ -245,11 +239,6 @@ a {
 
 .btn--accent:hover {
   background: #ec3000;
-}
-
-.btn--block {
-  width: 100%;
-  display: inline-block;
 }
 
 .btn--outline {
@@ -268,14 +257,18 @@ a {
   padding-right: 6rem;
 }
 
-@media screen and (min-width: 1025px) {
+.btn--block {
+  width: 100%;
+  display: inline-block;
+}
+
+@media screen and (min-width: 1024px) {
   .btn {
     font-size: 1.5rem;
   }
 }
 
 /* Inputs */
-
 .input {
   border-radius: var(--border-radius);
   border: 1px solid var(--color-border);
@@ -299,7 +292,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
-
+}
 
 .input-group .btn {
   margin: 4px;
@@ -310,13 +303,11 @@ a {
     font-size: 1.5rem;
   }
 }
-
 /* Cards */
-
 .card {
   border-radius: 7px;
   box-shadow: 0 0 20px 10px #f3f3f3;
-  overflow: inherit;
+  overflow: hidden;
 }
 
 .card__header,
@@ -339,7 +330,6 @@ a {
 }
 
 /* Plans */
-
 .plan__name {
   color: #fff;
   margin: 0;
@@ -390,16 +380,16 @@ a {
   .plan__price {
     font-size: 5rem;
   }
+
   .plan__billing-cycle {
     font-size: 1.6rem;
   }
+
   .plan__description {
     font-size: 1.7rem;
   }
 }
-
 /* Media */
-
 .media {
   display: flex;
 }
@@ -407,6 +397,7 @@ a {
 .media__title {
   margin-top: 0;
 }
+
 .media__body {
   margin: 0 2rem;
 }
@@ -414,9 +405,7 @@ a {
 .media__image {
   margin-top: 1rem;
 }
-
-/* quotes */
-
+/* Quotes */
 .quote {
   font-size: 3rem;
   font-style: italic;
@@ -466,14 +455,13 @@ a {
 }
 
 /* Grids */
-
 .grid {
   display: grid;
 }
 
 @media screen and (min-width: 768px) {
   .grid--1x2 {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -484,13 +472,13 @@ a {
 }
 
 /* Testimonials */
-
 .testimonial {
   padding: 3rem;
 }
 
 .testimonial__image {
   position: relative;
+  margin: 0 3rem;
 }
 
 .testimonial__image > img {
@@ -504,6 +492,10 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .testimonial__image {
+    margin: 0;
+  }
+
   .testimonial .quote,
   .testimonial .quote__author {
     font-size: 2.4rem;
@@ -511,11 +503,11 @@ a {
 
   .testimonial .quote {
     margin-left: 6rem;
+    margin-right: 0;
   }
 }
 
 /* Callouts */
-
 .callout {
   padding: 4rem;
   border-radius: 5px;
@@ -552,12 +544,11 @@ a {
 
   .callout .btn {
     justify-self: start;
-    margin: 0 3rem;
+    margin: 0 2rem;
   }
 }
 
 /* Collapsibles */
-
 .collapsible__header {
   display: flex;
   justify-content: space-between;
@@ -588,9 +579,7 @@ a {
   max-height: 100vh;
   opacity: 1;
 }
-
 /* Blocks */
-
 .block {
   --padding-vertical: 6rem;
   padding: var(--padding-vertical) 2rem;
@@ -629,7 +618,6 @@ a {
 }
 
 /* Navigation Bar */
-
 .nav {
   background: #000;
   display: flex;
@@ -641,16 +629,17 @@ a {
 
 .nav__list {
   width: 100%;
+  margin: 0;
 }
 
 .nav__item {
   padding: 0.5rem 2rem;
   border-bottom: 1px solid #222;
-  transition: color 0.3s;
 }
 
 .nav__item > a {
   color: #d2d0db;
+  transition: color 0.3s;
 }
 
 .nav__item > a:hover {
@@ -692,7 +681,6 @@ a {
 }
 
 /* Hero */
-
 .hero {
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 }
@@ -720,7 +708,6 @@ a {
 }
 
 /* Domain Block */
-
 .block-domain .input-group {
   box-shadow: 0 0 30px 20px #e6ebee;
   border: 0;
